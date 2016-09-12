@@ -156,4 +156,6 @@ dependencies {
     compile 'com.umeng.analytics:analytics:latest.integration'
     compile files('libs/umeng-update-v2.6.0.1.jar')
     compile project(':litepal')
+
+    compile 'com.github.djun100:UtilAndroid:3c35a08175fe3e1a863849c506aa90bcdd40413c'
 }

@@ -20,6 +20,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
+import com.cy.app.Log;
 import com.kaku.weac.service.DaemonService;
 import com.kaku.weac.util.LogUtil;
 
@@ -39,6 +40,7 @@ public class BootBroadcastReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         LogUtil.d(LOG_TAG, "onReceive ");
+        Log.writeW("boot received");
         context.startService(new Intent(context, DaemonService.class));
 
     }
